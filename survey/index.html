@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Construction</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>Survey Construction</h1>
+  </div>
+
+  <main>
+    <div class="intro">
+      <h2>What do you like or dislike about the UI of <a href="https://www.arngren.net/">ARNGREN</a> website?</h2>
+    
+      <a href="https://www.arngren.net/">
+        <img src="images/website.png" alt="website for evaluation">
+      </a>
+    </div>
+
+    
+    <form class="survey-form">
+      <div class="survey-form-section">
+        <p>1 - What is your first impression of this UI?</p>
+        <input type="text" id="textquestion" name="textquestion">
+      </div>
+
+      <div class="survey-form-section">
+        <p>2 - Do you like this UI?</p>
+        <input type="radio" id="yes" name="radio" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="radio" value="no">
+        <label for="no">No</label>
+        <input type="radio" id="emm" name="radio" value="emm">
+        <label for="emm">emm.. I don't know...</label>
+      </div>
+
+      <div class="survey-form-section">
+        <p>3 - Was the interface easy to understand?</p>
+        <select id="element" name="element">
+          <option value="easy">Easy</option>
+          <option value="somewhat">Somewhat</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+
+      <div class="survey-form-section">
+        <p>4 - If you could change things in this UI, what would they be?</p>
+        <input type="checkbox" id="color" name="color" value="Color">
+        <label for="color">Color</label> 
+        <input type="checkbox" id="font" name="font" value="Font">
+        <label for="font">Font</label> 
+        <input type="checkbox" id="layout" name="layout" value="Layout">
+        <label for="layout">Layout</label>
+      </div>
+      
+      <div class="survey-form-section">
+        <p>5 - Comments</p>
+        <textarea name="comments"></textarea>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Website designed by OceanLightt</p>
+    <p>&copy; 2021</p>
+  </footer>
+
+</body>
+</html>
